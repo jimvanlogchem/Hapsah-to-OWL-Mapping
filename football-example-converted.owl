@@ -1,0 +1,472 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xml:base="http://test.org/football-example.owl"
+         xmlns="http://test.org/football-example.owl#"
+         xmlns:owlr="http://www.lesfleursdunormal.fr/static/_downloads/owlready_ontology.owl#">
+
+<owl:Ontology rdf:about="http://test.org/football-example.owl"/>
+
+<owl:ObjectProperty rdf:about="#Association1">
+  <owl:inverseOf rdf:resource="#Association1Inverse"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hosts</rdfs:label>
+  <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">act as host of an event</rdfs:isDefinedBy>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hosts</owlr:python_name>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#Association1Inverse">
+  <owl:inverseOf rdf:resource="#Association1"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is hosted by</rdfs:label>
+  <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">act as host of an event</rdfs:isDefinedBy>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is hosted by</owlr:python_name>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#Association2">
+  <owl:inverseOf rdf:resource="#Association2Inverse"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">challenges</rdfs:label>
+  <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">to invite (someone) to engage in a contest</rdfs:isDefinedBy>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">challenges</owlr:python_name>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#Association2Inverse">
+  <owl:inverseOf rdf:resource="#Association2"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is challenged by</rdfs:label>
+  <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">to invite (someone) to engage in a contest</rdfs:isDefinedBy>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is challenged by</owlr:python_name>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#Association3">
+  <owl:inverseOf rdf:resource="#Association3Inverse"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plays in</rdfs:label>
+  <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">participate in a certain competition or match</rdfs:isDefinedBy>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">plays in</owlr:python_name>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#Association3Inverse">
+  <owl:inverseOf rdf:resource="#Association3"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is played by</rdfs:label>
+  <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">participate in a certain competition or match</rdfs:isDefinedBy>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is played by</owlr:python_name>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#Association4">
+  <owl:inverseOf rdf:resource="#Association4Inverse"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">competes in</rdfs:label>
+  <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">participate in a league or championship to compete for the title</rdfs:isDefinedBy>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">competes in</owlr:python_name>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#Association4Inverse">
+  <owl:inverseOf rdf:resource="#Association4"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is competed by</rdfs:label>
+  <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">participate in a league or championship to compete for the title</rdfs:isDefinedBy>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is competed by</owlr:python_name>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#Association5">
+  <owl:inverseOf rdf:resource="#Association5Inverse"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">employs</rdfs:label>
+  <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">give work to (someone) and pay them for it</rdfs:isDefinedBy>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">employs</owlr:python_name>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#Association5Inverse">
+  <owl:inverseOf rdf:resource="#Association5"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is employed by</rdfs:label>
+  <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">give work to (someone) and pay them for it</rdfs:isDefinedBy>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is employed by</owlr:python_name>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#Association6">
+  <owl:inverseOf rdf:resource="#Association6Inverse"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">utilizes</rdfs:label>
+  <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">make practical and effective use of</rdfs:isDefinedBy>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">utilizes</owlr:python_name>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#Association6Inverse">
+  <owl:inverseOf rdf:resource="#Association6"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is utilized by</rdfs:label>
+  <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">make practical and effective use of</rdfs:isDefinedBy>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is utilized by</owlr:python_name>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#Association7">
+  <owl:inverseOf rdf:resource="#Association7Inverse"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wins</rdfs:label>
+  <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">be successful or victorious in a contest</rdfs:isDefinedBy>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">wins</owlr:python_name>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#Association7Inverse">
+  <owl:inverseOf rdf:resource="#Association7"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is won by</rdfs:label>
+  <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">be successful or victorious in a contest</rdfs:isDefinedBy>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is won by</owlr:python_name>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#Association8">
+  <owl:inverseOf rdf:resource="#Association8Inverse"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">loses</rdfs:label>
+  <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fail to be successful or victorious in a contest</rdfs:isDefinedBy>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">loses</owlr:python_name>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#Association8Inverse">
+  <owl:inverseOf rdf:resource="#Association8"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is lost by</rdfs:label>
+  <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">fail to be successful or victorious in a contest</rdfs:isDefinedBy>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is lost by</owlr:python_name>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#Attribution4A">
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is located at</rdfs:label>
+  <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">be situated at a particular place or position</rdfs:isDefinedBy>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is located at</owlr:python_name>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#Attribution1A">
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is determined by</rdfs:label>
+  <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">having reached a decision on the final outcome</rdfs:isDefinedBy>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is determined by</owlr:python_name>
+</owl:ObjectProperty>
+
+<owl:ObjectProperty rdf:about="#Attribution5A">
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is named</rdfs:label>
+  <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mention the name that someone is called</rdfs:isDefinedBy>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is named</owlr:python_name>
+</owl:ObjectProperty>
+
+<owl:DatatypeProperty rdf:about="#Attribute1">
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">City</rdfs:label>
+  <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">identifying name given to a city or town</rdfs:isDefinedBy>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">City</owlr:python_name>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#Attribute2">
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Street name</rdfs:label>
+  <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">identifying name given to a street or road</rdfs:isDefinedBy>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Street name</owlr:python_name>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#Attribute3">
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">First name</rdfs:label>
+  <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">name that is given to someone when they were born</rdfs:isDefinedBy>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">First name</owlr:python_name>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#Attribute4">
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Surname</rdfs:label>
+  <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">name that someone shares with other members of their family</rdfs:isDefinedBy>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Surname</owlr:python_name>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#Attribute5">
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Country</rdfs:label>
+  <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nation with its own government, occupying a particular territory</rdfs:isDefinedBy>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Country</owlr:python_name>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#Attribute6">
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Name</rdfs:label>
+  <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">name that is given to something</rdfs:isDefinedBy>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Name</owlr:python_name>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#Attribute7">
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Home team score</rdfs:label>
+  <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">amount of points scored by the home team</rdfs:isDefinedBy>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Home team score</owlr:python_name>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#Attribute8">
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Away team score</rdfs:label>
+  <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">amount of points scored by the away team</rdfs:isDefinedBy>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Away team score</owlr:python_name>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#Attribute9">
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">House number</rdfs:label>
+  <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">unique number to each building in a street or area, with the intention of making it easier to locate a particular building</rdfs:isDefinedBy>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">House number</owlr:python_name>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#Attribute10">
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Position</rdfs:label>
+  <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">initial reference point for positioning of a player relative to the teammates</rdfs:isDefinedBy>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Position</owlr:python_name>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#Attribution1">
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is determined by</rdfs:label>
+  <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">having reached a decision on the final outcome</rdfs:isDefinedBy>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is determined by</owlr:python_name>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#Attribution2">
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is positioned at</rdfs:label>
+  <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mention the position a player is active on in the field</rdfs:isDefinedBy>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is positioned at</owlr:python_name>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#Attribution3">
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is played in</rdfs:label>
+  <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mention where something is played</rdfs:isDefinedBy>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is played in</owlr:python_name>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#Attribution4">
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is located at</rdfs:label>
+  <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">be situated at a particular place or position</rdfs:isDefinedBy>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is located at</owlr:python_name>
+</owl:DatatypeProperty>
+
+<owl:DatatypeProperty rdf:about="#Attribution5">
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is named</rdfs:label>
+  <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mention the name that someone is called</rdfs:isDefinedBy>
+  <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is named</owlr:python_name>
+</owl:DatatypeProperty>
+
+<owl:Class rdf:about="#Descriptor1">
+  <rdfs:subClassOf rdf:resource="http://www.hapsah-ontology/hapsah#Descriptor"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Score</rdfs:label>
+  <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">record to keep track of the points scored by the teams playing in a match</rdfs:isDefinedBy>
+</owl:Class>
+
+<owl:Class rdf:about="#Descriptor2">
+  <rdfs:subClassOf rdf:resource="http://www.hapsah-ontology/hapsah#Descriptor"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Address</rdfs:label>
+  <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">conventional form by which the location of a building is described</rdfs:isDefinedBy>
+</owl:Class>
+
+<owl:Class rdf:about="#Descriptor3">
+  <rdfs:subClassOf rdf:resource="http://www.hapsah-ontology/hapsah#Descriptor"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Full name</rdfs:label>
+  <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">person's whole name, including their first name and surname</rdfs:isDefinedBy>
+</owl:Class>
+
+<owl:Class rdf:about="#Entity1">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Football player</rdfs:label>
+  <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">person who plays football, especially as a job</rdfs:isDefinedBy>
+</owl:Class>
+
+<owl:Class rdf:about="#Entity2">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Football team</rdfs:label>
+  <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">group of players selected to play together in the various team sports known as football</rdfs:isDefinedBy>
+</owl:Class>
+
+<owl:Class rdf:about="#Entity3">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Match</rdfs:label>
+  <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">contest in which two football teams compete against each other</rdfs:isDefinedBy>
+</owl:Class>
+
+<owl:Class rdf:about="#Entity4">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Football League</rdfs:label>
+  <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">competition in which multiple football teams compete for the championship title</rdfs:isDefinedBy>
+</owl:Class>
+
+<owl:Class rdf:about="#Entity5">
+  <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+  <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stadium</rdfs:label>
+  <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sports ground with tiers of seats for spectators</rdfs:isDefinedBy>
+</owl:Class>
+
+<Descriptor2 rdf:about="#D1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <Attribute1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rotterdam</Attribute1>
+  <Attribute9 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</Attribute9>
+  <Attribute2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Straat</Attribute2>
+</Descriptor2>
+
+<Descriptor1 rdf:about="#D2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <Attribute8 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</Attribute8>
+  <Attribute7 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</Attribute7>
+</Descriptor1>
+
+<Descriptor1 rdf:about="#D3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <Attribute8 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.0</Attribute8>
+  <Attribute7 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.0</Attribute7>
+</Descriptor1>
+
+<Descriptor3 rdf:about="#D4">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <Attribute3 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Justin</Attribute3>
+  <Attribute4 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bijlow</Attribute4>
+</Descriptor3>
+
+<Descriptor2 rdf:about="#D5">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <Attribute1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Amsterdam</Attribute1>
+  <Attribute9 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.0</Attribute9>
+  <Attribute2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">street</Attribute2>
+</Descriptor2>
+
+<Descriptor3 rdf:about="#D6">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <Attribute3 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Erling</Attribute3>
+  <Attribute4 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Haaland</Attribute4>
+</Descriptor3>
+
+<Descriptor3 rdf:about="#D7">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <Attribute3 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Steven</Attribute3>
+  <Attribute4 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Berghuis</Attribute4>
+</Descriptor3>
+
+<Descriptor2 rdf:about="#D8">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <Attribute1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Liverpool</Attribute1>
+  <Attribute9 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.0</Attribute9>
+  <Attribute2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Street</Attribute2>
+</Descriptor2>
+
+<Descriptor2 rdf:about="#D9">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <Attribute1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Manchester</Attribute1>
+  <Attribute9 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">22.0</Attribute9>
+  <Attribute2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Baker Street</Attribute2>
+</Descriptor2>
+
+<Descriptor1 rdf:about="#D10">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <Attribute8 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</Attribute8>
+  <Attribute7 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.0</Attribute7>
+</Descriptor1>
+
+<Descriptor3 rdf:about="#D11">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <Attribute3 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Virgil</Attribute3>
+  <Attribute4 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Van Dijk</Attribute4>
+</Descriptor3>
+
+<Entity2 rdf:about="#E1">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <Association6 rdf:resource="#E2"/>
+  <Association1 rdf:resource="#E3"/>
+  <Association3 rdf:resource="#E3"/>
+  <Association1 rdf:resource="#E5"/>
+  <Association3 rdf:resource="#E5"/>
+  <Association4 rdf:resource="#E6"/>
+  <Association5 rdf:resource="#E7"/>
+  <Attribution5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Feyenoord</Attribution5>
+</Entity2>
+
+<Entity5 rdf:about="#E2">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <Attribution4A rdf:resource="#D1"/>
+  <Attribution5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">De Kuip</Attribution5>
+</Entity5>
+
+<Entity3 rdf:about="#E3">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <Attribution1A rdf:resource="#D2"/>
+  <Association6 rdf:resource="#E2"/>
+</Entity3>
+
+<Entity2 rdf:about="#E4">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <Association3 rdf:resource="#E5"/>
+  <Association4 rdf:resource="#E6"/>
+  <Association5 rdf:resource="#E11"/>
+  <Association6 rdf:resource="#E8"/>
+  <Attribution5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ajax</Attribution5>
+</Entity2>
+
+<Entity3 rdf:about="#E5">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <Attribution1A rdf:resource="#D3"/>
+  <Association6 rdf:resource="#E2"/>
+</Entity3>
+
+<Entity4 rdf:about="#E6">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <Attribution3 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Holland</Attribution3>
+  <Attribution5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Eredivisie</Attribution5>
+</Entity4>
+
+<Entity1 rdf:about="#E7">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <Attribution5A rdf:resource="#D4"/>
+  <Attribution5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">.</Attribution5>
+  <Attribution2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Keeper</Attribution2>
+</Entity1>
+
+<Entity5 rdf:about="#E8">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <Attribution4A rdf:resource="#D5"/>
+  <Attribution5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Arena</Attribution5>
+</Entity5>
+
+<Entity4 rdf:about="#E9">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <Attribution3 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">England</Attribution3>
+  <Attribution5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Premier League</Attribution5>
+</Entity4>
+
+<Entity1 rdf:about="#E10">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <Attribution5A rdf:resource="#D6"/>
+  <Attribution5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">.</Attribution5>
+  <Attribution2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Striker</Attribution2>
+</Entity1>
+
+<Entity1 rdf:about="#E11">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <Attribution5A rdf:resource="#D7"/>
+  <Attribution5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">.</Attribution5>
+  <Attribution2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Forward</Attribution2>
+</Entity1>
+
+<Entity2 rdf:about="#E12">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <Association4 rdf:resource="#E9"/>
+  <Association5 rdf:resource="#E10"/>
+  <Association6 rdf:resource="#E15"/>
+  <Association1 rdf:resource="#E16"/>
+  <Association7 rdf:resource="#E16"/>
+  <Attribution5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Manchester City</Attribution5>
+</Entity2>
+
+<Entity2 rdf:about="#E13">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <Association4 rdf:resource="#E9"/>
+  <Association6 rdf:resource="#E14"/>
+  <Association8 rdf:resource="#E16"/>
+  <Association5 rdf:resource="#E17"/>
+  <Attribution5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Liverpool</Attribution5>
+</Entity2>
+
+<Entity5 rdf:about="#E14">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <Attribution4A rdf:resource="#D8"/>
+  <Attribution5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Anfield</Attribution5>
+</Entity5>
+
+<Entity5 rdf:about="#E15">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <Attribution4A rdf:resource="#D9"/>
+  <Attribution5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Etihad Stadium</Attribution5>
+</Entity5>
+
+<Entity3 rdf:about="#E16">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <Attribution1A rdf:resource="#D10"/>
+</Entity3>
+
+<Entity1 rdf:about="#E17">
+  <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
+  <Attribution5A rdf:resource="#D11"/>
+  <Attribution5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">.</Attribution5>
+  <Attribution2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Defender</Attribution2>
+</Entity1>
+
+
+</rdf:RDF>
