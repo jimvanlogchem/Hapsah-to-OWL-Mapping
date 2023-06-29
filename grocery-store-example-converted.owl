@@ -1,0 +1,575 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://test.org/grocery-store-example.owl#"
+     xml:base="http://test.org/grocery-store-example.owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:owlr="http://www.lesfleursdunormal.fr/static/_downloads/owlready_ontology.owl#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://test.org/grocery-store-example.owl"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.lesfleursdunormal.fr/static/_downloads/owlready_ontology.owl#python_name -->
+
+    <owl:AnnotationProperty rdf:about="http://www.lesfleursdunormal.fr/static/_downloads/owlready_ontology.owl#python_name"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://test.org/grocery-store-example.owl#Association1 -->
+
+    <owl:ObjectProperty rdf:about="http://test.org/grocery-store-example.owl#Association1">
+        <owl:inverseOf rdf:resource="http://test.org/grocery-store-example.owl#Association1Inverse"/>
+        <owlr:python_name>offers</owlr:python_name>
+        <rdfs:isDefinedBy>present (something) for (someone) to accept or reject as desired</rdfs:isDefinedBy>
+        <rdfs:label>offers</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://test.org/grocery-store-example.owl#Association1Inverse -->
+
+    <owl:ObjectProperty rdf:about="http://test.org/grocery-store-example.owl#Association1Inverse">
+        <owlr:python_name>is offered by</owlr:python_name>
+        <rdfs:isDefinedBy>present (something) for (someone) to accept or reject as desired</rdfs:isDefinedBy>
+        <rdfs:label>is offered by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://test.org/grocery-store-example.owl#Association2 -->
+
+    <owl:ObjectProperty rdf:about="http://test.org/grocery-store-example.owl#Association2">
+        <owl:inverseOf rdf:resource="http://test.org/grocery-store-example.owl#Association2Inverse"/>
+        <owlr:python_name>contains</owlr:python_name>
+        <rdfs:isDefinedBy>have or hold (someone or something) within</rdfs:isDefinedBy>
+        <rdfs:label>contains</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://test.org/grocery-store-example.owl#Association2Inverse -->
+
+    <owl:ObjectProperty rdf:about="http://test.org/grocery-store-example.owl#Association2Inverse">
+        <owlr:python_name>is contained by</owlr:python_name>
+        <rdfs:isDefinedBy>have or hold (someone or something) within</rdfs:isDefinedBy>
+        <rdfs:label>is contained by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://test.org/grocery-store-example.owl#Association3 -->
+
+    <owl:ObjectProperty rdf:about="http://test.org/grocery-store-example.owl#Association3">
+        <owl:inverseOf rdf:resource="http://test.org/grocery-store-example.owl#Association3Inverse"/>
+        <owlr:python_name>checks out</owlr:python_name>
+        <rdfs:isDefinedBy>indicate that the selected grocery products will be purchased</rdfs:isDefinedBy>
+        <rdfs:label>checks out</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://test.org/grocery-store-example.owl#Association3Inverse -->
+
+    <owl:ObjectProperty rdf:about="http://test.org/grocery-store-example.owl#Association3Inverse">
+        <owlr:python_name>is checked out by</owlr:python_name>
+        <rdfs:isDefinedBy>indicate that the selected grocery products will be purchased</rdfs:isDefinedBy>
+        <rdfs:label>is checked out by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://test.org/grocery-store-example.owl#Association4 -->
+
+    <owl:ObjectProperty rdf:about="http://test.org/grocery-store-example.owl#Association4">
+        <owl:inverseOf rdf:resource="http://test.org/grocery-store-example.owl#Association4Inverse"/>
+        <owlr:python_name>uses</owlr:python_name>
+        <rdfs:isDefinedBy>take, hold, or deploy (something) as a means of accomplishing or achieving something</rdfs:isDefinedBy>
+        <rdfs:label>uses</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://test.org/grocery-store-example.owl#Association4Inverse -->
+
+    <owl:ObjectProperty rdf:about="http://test.org/grocery-store-example.owl#Association4Inverse">
+        <owlr:python_name>is used by</owlr:python_name>
+        <rdfs:isDefinedBy>take, hold, or deploy (something) as a means of accomplishing or achieving something</rdfs:isDefinedBy>
+        <rdfs:label>is used by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://test.org/grocery-store-example.owl#Attribution1A -->
+
+    <owl:ObjectProperty rdf:about="http://test.org/grocery-store-example.owl#Attribution1A">
+        <owlr:python_name>is valued at</owlr:python_name>
+        <rdfs:isDefinedBy>indicate the monetary worth of</rdfs:isDefinedBy>
+        <rdfs:label>is valued at</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://test.org/grocery-store-example.owl#Attribution2A -->
+
+    <owl:ObjectProperty rdf:about="http://test.org/grocery-store-example.owl#Attribution2A">
+        <owlr:python_name>is totalled to</owlr:python_name>
+        <rdfs:isDefinedBy>add up to a total amount</rdfs:isDefinedBy>
+        <rdfs:label>is totalled to</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://test.org/grocery-store-example.owl#Attribution4A -->
+
+    <owl:ObjectProperty rdf:about="http://test.org/grocery-store-example.owl#Attribution4A">
+        <owlr:python_name>is located at</owlr:python_name>
+        <rdfs:isDefinedBy>be situated at a particular place or position</rdfs:isDefinedBy>
+        <rdfs:label>is located at</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://test.org/grocery-store-example.owl#Attribution5A -->
+
+    <owl:ObjectProperty rdf:about="http://test.org/grocery-store-example.owl#Attribution5A">
+        <owlr:python_name>lives at</owlr:python_name>
+        <rdfs:isDefinedBy>have as a permanent residence</rdfs:isDefinedBy>
+        <rdfs:label>lives at</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://test.org/grocery-store-example.owl#Attribution6A -->
+
+    <owl:ObjectProperty rdf:about="http://test.org/grocery-store-example.owl#Attribution6A">
+        <owlr:python_name>is referred to by</owlr:python_name>
+        <rdfs:isDefinedBy>mention someone or something in speech or in writing</rdfs:isDefinedBy>
+        <rdfs:label>is referred to by</rdfs:label>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://test.org/grocery-store-example.owl#Attribute1 -->
+
+    <owl:DatatypeProperty rdf:about="http://test.org/grocery-store-example.owl#Attribute1">
+        <owlr:python_name>First name</owlr:python_name>
+        <rdfs:isDefinedBy>first of the names that were given to someone when they were born</rdfs:isDefinedBy>
+        <rdfs:label>First name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://test.org/grocery-store-example.owl#Attribute2 -->
+
+    <owl:DatatypeProperty rdf:about="http://test.org/grocery-store-example.owl#Attribute2">
+        <owlr:python_name>Surname</owlr:python_name>
+        <rdfs:isDefinedBy>name that someone shares with other members of their family</rdfs:isDefinedBy>
+        <rdfs:label>Surname</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://test.org/grocery-store-example.owl#Attribute3 -->
+
+    <owl:DatatypeProperty rdf:about="http://test.org/grocery-store-example.owl#Attribute3">
+        <owlr:python_name>Product name</owlr:python_name>
+        <rdfs:isDefinedBy>word or set of words by which a product is known, addressed, or referred to</rdfs:isDefinedBy>
+        <rdfs:label>Product name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://test.org/grocery-store-example.owl#Attribute4 -->
+
+    <owl:DatatypeProperty rdf:about="http://test.org/grocery-store-example.owl#Attribute4">
+        <owlr:python_name>Product description</owlr:python_name>
+        <rdfs:isDefinedBy>statement that tells you how a product looks, sounds, tastes etc.</rdfs:isDefinedBy>
+        <rdfs:label>Product description</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://test.org/grocery-store-example.owl#Attribute5 -->
+
+    <owl:DatatypeProperty rdf:about="http://test.org/grocery-store-example.owl#Attribute5">
+        <owlr:python_name>Street name</owlr:python_name>
+        <rdfs:isDefinedBy>identifying name given to a street or road</rdfs:isDefinedBy>
+        <rdfs:label>Street name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://test.org/grocery-store-example.owl#Attribute6 -->
+
+    <owl:DatatypeProperty rdf:about="http://test.org/grocery-store-example.owl#Attribute6">
+        <owlr:python_name>House number</owlr:python_name>
+        <rdfs:isDefinedBy>unique number to each building in a street or area, with the intention of making it easier to locate a particular building</rdfs:isDefinedBy>
+        <rdfs:label>House number</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://test.org/grocery-store-example.owl#Attribute7 -->
+
+    <owl:DatatypeProperty rdf:about="http://test.org/grocery-store-example.owl#Attribute7">
+        <owlr:python_name>City name</owlr:python_name>
+        <rdfs:isDefinedBy>identifying name given to a city or town</rdfs:isDefinedBy>
+        <rdfs:label>City name</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://test.org/grocery-store-example.owl#Attribute8 -->
+
+    <owl:DatatypeProperty rdf:about="http://test.org/grocery-store-example.owl#Attribute8">
+        <owlr:python_name>Currency</owlr:python_name>
+        <rdfs:isDefinedBy>medium of value exchange, especially circulating banknotes and coins</rdfs:isDefinedBy>
+        <rdfs:label>Currency</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://test.org/grocery-store-example.owl#Attribute9 -->
+
+    <owl:DatatypeProperty rdf:about="http://test.org/grocery-store-example.owl#Attribute9">
+        <owlr:python_name>Amount</owlr:python_name>
+        <rdfs:isDefinedBy>quantity of something, especially the total of a thing or things in number, size, value, or extent</rdfs:isDefinedBy>
+        <rdfs:label>Amount</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://test.org/grocery-store-example.owl#Attribution1 -->
+
+    <owl:DatatypeProperty rdf:about="http://test.org/grocery-store-example.owl#Attribution1">
+        <owlr:python_name>is valued at</owlr:python_name>
+        <rdfs:isDefinedBy>indicate the monetary worth of</rdfs:isDefinedBy>
+        <rdfs:label>is valued at</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://test.org/grocery-store-example.owl#Attribution2 -->
+
+    <owl:DatatypeProperty rdf:about="http://test.org/grocery-store-example.owl#Attribution2">
+        <owlr:python_name>is totalled to</owlr:python_name>
+        <rdfs:isDefinedBy>add up to a total amount</rdfs:isDefinedBy>
+        <rdfs:label>is totalled to</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://test.org/grocery-store-example.owl#Attribution3 -->
+
+    <owl:DatatypeProperty rdf:about="http://test.org/grocery-store-example.owl#Attribution3">
+        <owlr:python_name>is reduced to</owlr:python_name>
+        <rdfs:isDefinedBy>make smaller or less in amount, degree, or size</rdfs:isDefinedBy>
+        <rdfs:label>is reduced to</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://test.org/grocery-store-example.owl#Attribution4 -->
+
+    <owl:DatatypeProperty rdf:about="http://test.org/grocery-store-example.owl#Attribution4">
+        <owlr:python_name>is located at</owlr:python_name>
+        <rdfs:isDefinedBy>be situated at a particular place or position</rdfs:isDefinedBy>
+        <rdfs:label>is located at</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://test.org/grocery-store-example.owl#Attribution5 -->
+
+    <owl:DatatypeProperty rdf:about="http://test.org/grocery-store-example.owl#Attribution5">
+        <owlr:python_name>lives at</owlr:python_name>
+        <rdfs:isDefinedBy>have as a permanent residence</rdfs:isDefinedBy>
+        <rdfs:label>lives at</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://test.org/grocery-store-example.owl#Attribution6 -->
+
+    <owl:DatatypeProperty rdf:about="http://test.org/grocery-store-example.owl#Attribution6">
+        <owlr:python_name>is referred to by</owlr:python_name>
+        <rdfs:isDefinedBy>mention someone or something in speech or in writing</rdfs:isDefinedBy>
+        <rdfs:label>is referred to by</rdfs:label>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://test.org/grocery-store-example.owl#Descriptor1 -->
+
+    <owl:Class rdf:about="http://test.org/grocery-store-example.owl#Descriptor1">
+        <rdfs:subClassOf rdf:resource="http://www.hapsah-ontology/hapsah#Descriptor"/>
+        <rdfs:isDefinedBy>conventional form by which the location of a building is described</rdfs:isDefinedBy>
+        <rdfs:label>Address</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://test.org/grocery-store-example.owl#Descriptor2 -->
+
+    <owl:Class rdf:about="http://test.org/grocery-store-example.owl#Descriptor2">
+        <rdfs:subClassOf rdf:resource="http://www.hapsah-ontology/hapsah#Descriptor"/>
+        <rdfs:isDefinedBy>complete set of names of someone, including their first and surname</rdfs:isDefinedBy>
+        <rdfs:label>Full name</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://test.org/grocery-store-example.owl#Descriptor3 -->
+
+    <owl:Class rdf:about="http://test.org/grocery-store-example.owl#Descriptor3">
+        <rdfs:subClassOf rdf:resource="http://www.hapsah-ontology/hapsah#Descriptor"/>
+        <rdfs:isDefinedBy>quantity of payment or compensation given by one party to another in return for goods or services</rdfs:isDefinedBy>
+        <rdfs:label>Price</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://test.org/grocery-store-example.owl#Entity1 -->
+
+    <owl:Class rdf:about="http://test.org/grocery-store-example.owl#Entity1">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:isDefinedBy>place where grocery products are sold</rdfs:isDefinedBy>
+        <rdfs:label>Grocery store</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://test.org/grocery-store-example.owl#Entity2 -->
+
+    <owl:Class rdf:about="http://test.org/grocery-store-example.owl#Entity2">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:isDefinedBy>food or household supply</rdfs:isDefinedBy>
+        <rdfs:label>Grocery product</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://test.org/grocery-store-example.owl#Entity3 -->
+
+    <owl:Class rdf:about="http://test.org/grocery-store-example.owl#Entity3">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:isDefinedBy>recipient of grocery products</rdfs:isDefinedBy>
+        <rdfs:label>Customer</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://test.org/grocery-store-example.owl#Entity4 -->
+
+    <owl:Class rdf:about="http://test.org/grocery-store-example.owl#Entity4">
+        <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+        <rdfs:isDefinedBy>cart that is used for holding merchandise when shopping</rdfs:isDefinedBy>
+        <rdfs:label>Shopping cart</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- http://www.hapsah-ontology/hapsah#Descriptor -->
+
+    <owl:Class rdf:about="http://www.hapsah-ontology/hapsah#Descriptor"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://test.org/grocery-store-example.owl#D1 -->
+
+    <owl:NamedIndividual rdf:about="http://test.org/grocery-store-example.owl#D1">
+        <rdf:type rdf:resource="http://test.org/grocery-store-example.owl#Descriptor1"/>
+        <Attribute5>Jump street</Attribute5>
+        <Attribute6 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">123.0</Attribute6>
+        <Attribute7>New York</Attribute7>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://test.org/grocery-store-example.owl#D2 -->
+
+    <owl:NamedIndividual rdf:about="http://test.org/grocery-store-example.owl#D2">
+        <rdf:type rdf:resource="http://test.org/grocery-store-example.owl#Descriptor3"/>
+        <Attribute8>EUR</Attribute8>
+        <Attribute9 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</Attribute9>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://test.org/grocery-store-example.owl#D3 -->
+
+    <owl:NamedIndividual rdf:about="http://test.org/grocery-store-example.owl#D3">
+        <rdf:type rdf:resource="http://test.org/grocery-store-example.owl#Descriptor2"/>
+        <Attribute1>John</Attribute1>
+        <Attribute2>Doe</Attribute2>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://test.org/grocery-store-example.owl#D4 -->
+
+    <owl:NamedIndividual rdf:about="http://test.org/grocery-store-example.owl#D4">
+        <rdf:type rdf:resource="http://test.org/grocery-store-example.owl#Descriptor1"/>
+        <Attribute5>Jump street</Attribute5>
+        <Attribute6 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">21.0</Attribute6>
+        <Attribute7>New York</Attribute7>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://test.org/grocery-store-example.owl#D5 -->
+
+    <owl:NamedIndividual rdf:about="http://test.org/grocery-store-example.owl#D5">
+        <rdf:type rdf:resource="http://test.org/grocery-store-example.owl#Descriptor3"/>
+        <Attribute8>EUR</Attribute8>
+        <Attribute9 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.0</Attribute9>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://test.org/grocery-store-example.owl#D6 -->
+
+    <owl:NamedIndividual rdf:about="http://test.org/grocery-store-example.owl#D6">
+        <rdf:type rdf:resource="http://test.org/grocery-store-example.owl#Descriptor3"/>
+        <Attribute8>EUR</Attribute8>
+        <Attribute9 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">4.0</Attribute9>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://test.org/grocery-store-example.owl#D7 -->
+
+    <owl:NamedIndividual rdf:about="http://test.org/grocery-store-example.owl#D7">
+        <rdf:type rdf:resource="http://test.org/grocery-store-example.owl#Descriptor3"/>
+        <Attribute8>EUR</Attribute8>
+        <Attribute9 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">101.0</Attribute9>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://test.org/grocery-store-example.owl#E1 -->
+
+    <owl:NamedIndividual rdf:about="http://test.org/grocery-store-example.owl#E1">
+        <rdf:type rdf:resource="http://test.org/grocery-store-example.owl#Entity1"/>
+        <Association1 rdf:resource="http://test.org/grocery-store-example.owl#E2"/>
+        <Association1 rdf:resource="http://test.org/grocery-store-example.owl#E4"/>
+        <Association1 rdf:resource="http://test.org/grocery-store-example.owl#E5"/>
+        <Association1 rdf:resource="http://test.org/grocery-store-example.owl#E6"/>
+        <Attribution4A rdf:resource="http://test.org/grocery-store-example.owl#D1"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://test.org/grocery-store-example.owl#E2 -->
+
+    <owl:NamedIndividual rdf:about="http://test.org/grocery-store-example.owl#E2">
+        <rdf:type rdf:resource="http://test.org/grocery-store-example.owl#Entity4"/>
+        <Attribution2A rdf:resource="http://test.org/grocery-store-example.owl#D2"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://test.org/grocery-store-example.owl#E3 -->
+
+    <owl:NamedIndividual rdf:about="http://test.org/grocery-store-example.owl#E3">
+        <rdf:type rdf:resource="http://test.org/grocery-store-example.owl#Entity3"/>
+        <Association4 rdf:resource="http://test.org/grocery-store-example.owl#E2"/>
+        <Attribution5A rdf:resource="http://test.org/grocery-store-example.owl#D4"/>
+        <Attribution6A rdf:resource="http://test.org/grocery-store-example.owl#D3"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://test.org/grocery-store-example.owl#E4 -->
+
+    <owl:NamedIndividual rdf:about="http://test.org/grocery-store-example.owl#E4">
+        <rdf:type rdf:resource="http://test.org/grocery-store-example.owl#Entity2"/>
+        <Attribution1A rdf:resource="http://test.org/grocery-store-example.owl#D5"/>
+        <Attribution6>Milk</Attribution6>
+        <Attribution6>Nutrient-rich liquid food produced by the mammary glands of mammals.</Attribution6>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://test.org/grocery-store-example.owl#E5 -->
+
+    <owl:NamedIndividual rdf:about="http://test.org/grocery-store-example.owl#E5">
+        <rdf:type rdf:resource="http://test.org/grocery-store-example.owl#Entity2"/>
+        <Attribution1A rdf:resource="http://test.org/grocery-store-example.owl#D6"/>
+        <Attribution6>Cheese</Attribution6>
+        <Attribution6>Dairy product produced in wide ranges of flavors, textures and forms by coagulation of the milk protein casein.</Attribution6>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://test.org/grocery-store-example.owl#E6 -->
+
+    <owl:NamedIndividual rdf:about="http://test.org/grocery-store-example.owl#E6">
+        <rdf:type rdf:resource="http://test.org/grocery-store-example.owl#Entity2"/>
+        <Attribution1A rdf:resource="http://test.org/grocery-store-example.owl#D7"/>
+        <Attribution6>Fruiting body of a subterranean ascomycete fungus, predominantly one of the many species of the genus Tuber.</Attribution6>
+        <Attribution6>Truffles</Attribution6>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.25.2023-02-15T19:15:49Z) https://github.com/owlcs/owlapi -->
+
