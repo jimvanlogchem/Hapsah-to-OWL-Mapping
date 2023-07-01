@@ -356,6 +356,7 @@
   <Association3 rdf:resource="#E5"/>
   <Association4 rdf:resource="#E6"/>
   <Association5 rdf:resource="#E7"/>
+  <Association7 rdf:resource="#E5"/>
   <Attribution5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Feyenoord</Attribution5>
 </Entity2>
 
@@ -377,6 +378,7 @@
   <Association4 rdf:resource="#E6"/>
   <Association5 rdf:resource="#E11"/>
   <Association6 rdf:resource="#E8"/>
+  <Association8 rdf:resource="#E5"/>
   <Attribution5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ajax</Attribution5>
 </Entity2>
 
