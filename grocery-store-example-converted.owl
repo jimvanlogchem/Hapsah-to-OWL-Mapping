@@ -186,19 +186,19 @@
 </owl:DatatypeProperty>
 
 <owl:Class rdf:about="#DescriptorType1">
-  <rdfs:subClassOf rdf:resource="http://www.hapsah-ontology/hapsah#Descriptor"/>
+  <rdfs:subClassOf rdf:resource="http://www.hapsah-ontology/hapsah#DescriptorType"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Address</rdfs:label>
   <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">conventional form by which the location of a building is described</rdfs:isDefinedBy>
 </owl:Class>
 
 <owl:Class rdf:about="#DescriptorType2">
-  <rdfs:subClassOf rdf:resource="http://www.hapsah-ontology/hapsah#Descriptor"/>
+  <rdfs:subClassOf rdf:resource="http://www.hapsah-ontology/hapsah#DescriptorType"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Full name</rdfs:label>
   <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">complete set of names of someone, including their first and surname</rdfs:isDefinedBy>
 </owl:Class>
 
 <owl:Class rdf:about="#DescriptorType3">
-  <rdfs:subClassOf rdf:resource="http://www.hapsah-ontology/hapsah#Descriptor"/>
+  <rdfs:subClassOf rdf:resource="http://www.hapsah-ontology/hapsah#DescriptorType"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Price</rdfs:label>
   <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">quantity of payment or compensation given by one party to another in return for goods or services</rdfs:isDefinedBy>
 </owl:Class>
