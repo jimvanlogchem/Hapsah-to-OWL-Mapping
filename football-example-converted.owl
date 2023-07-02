@@ -230,19 +230,19 @@
 </owl:DatatypeProperty>
 
 <owl:Class rdf:about="#DescriptorType1">
-  <rdfs:subClassOf rdf:resource="http://www.hapsah-ontology/hapsah#Descriptor"/>
+  <rdfs:subClassOf rdf:resource="http://www.hapsah-ontology/hapsah#DescriptorType"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Score</rdfs:label>
   <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">record to keep track of the points scored by the teams playing in a match</rdfs:isDefinedBy>
 </owl:Class>
 
 <owl:Class rdf:about="#DescriptorType2">
-  <rdfs:subClassOf rdf:resource="http://www.hapsah-ontology/hapsah#Descriptor"/>
+  <rdfs:subClassOf rdf:resource="http://www.hapsah-ontology/hapsah#DescriptorType"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Address</rdfs:label>
   <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">conventional form by which the location of a building is described</rdfs:isDefinedBy>
 </owl:Class>
 
 <owl:Class rdf:about="#DescriptorType3">
-  <rdfs:subClassOf rdf:resource="http://www.hapsah-ontology/hapsah#Descriptor"/>
+  <rdfs:subClassOf rdf:resource="http://www.hapsah-ontology/hapsah#DescriptorType"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Full name</rdfs:label>
   <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">person's whole name, including their first name and surname</rdfs:isDefinedBy>
 </owl:Class>
