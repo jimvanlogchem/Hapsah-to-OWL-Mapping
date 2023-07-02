@@ -121,19 +121,19 @@
   <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is lost by</owlr:python_name>
 </owl:ObjectProperty>
 
-<owl:ObjectProperty rdf:about="#Attribution4A">
+<owl:ObjectProperty rdf:about="#Attribution4OP">
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is located at</rdfs:label>
   <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">be situated at a particular place or position</rdfs:isDefinedBy>
   <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is located at</owlr:python_name>
 </owl:ObjectProperty>
 
-<owl:ObjectProperty rdf:about="#Attribution1A">
+<owl:ObjectProperty rdf:about="#Attribution1OP">
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is determined by</rdfs:label>
   <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">having reached a decision on the final outcome</rdfs:isDefinedBy>
   <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is determined by</owlr:python_name>
 </owl:ObjectProperty>
 
-<owl:ObjectProperty rdf:about="#Attribution5A">
+<owl:ObjectProperty rdf:about="#Attribution5OP">
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is named</rdfs:label>
   <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mention the name that someone is called</rdfs:isDefinedBy>
   <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is named</owlr:python_name>
@@ -229,246 +229,246 @@
   <owlr:python_name rdf:datatype="http://www.w3.org/2001/XMLSchema#string">is named</owlr:python_name>
 </owl:DatatypeProperty>
 
-<owl:Class rdf:about="#Descriptor1">
+<owl:Class rdf:about="#DescriptorType1">
   <rdfs:subClassOf rdf:resource="http://www.hapsah-ontology/hapsah#Descriptor"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Score</rdfs:label>
   <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">record to keep track of the points scored by the teams playing in a match</rdfs:isDefinedBy>
 </owl:Class>
 
-<owl:Class rdf:about="#Descriptor2">
+<owl:Class rdf:about="#DescriptorType2">
   <rdfs:subClassOf rdf:resource="http://www.hapsah-ontology/hapsah#Descriptor"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Address</rdfs:label>
   <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">conventional form by which the location of a building is described</rdfs:isDefinedBy>
 </owl:Class>
 
-<owl:Class rdf:about="#Descriptor3">
+<owl:Class rdf:about="#DescriptorType3">
   <rdfs:subClassOf rdf:resource="http://www.hapsah-ontology/hapsah#Descriptor"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Full name</rdfs:label>
   <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">person's whole name, including their first name and surname</rdfs:isDefinedBy>
 </owl:Class>
 
-<owl:Class rdf:about="#Entity1">
+<owl:Class rdf:about="#EntityType1">
   <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Football player</rdfs:label>
   <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">person who plays football, especially as a job</rdfs:isDefinedBy>
 </owl:Class>
 
-<owl:Class rdf:about="#Entity2">
+<owl:Class rdf:about="#EntityType2">
   <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Football team</rdfs:label>
   <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">group of players selected to play together in the various team sports known as football</rdfs:isDefinedBy>
 </owl:Class>
 
-<owl:Class rdf:about="#Entity3">
+<owl:Class rdf:about="#EntityType3">
   <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Match</rdfs:label>
   <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">contest in which two football teams compete against each other</rdfs:isDefinedBy>
 </owl:Class>
 
-<owl:Class rdf:about="#Entity4">
+<owl:Class rdf:about="#EntityType4">
   <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Football League</rdfs:label>
   <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">competition in which multiple football teams compete for the championship title</rdfs:isDefinedBy>
 </owl:Class>
 
-<owl:Class rdf:about="#Entity5">
+<owl:Class rdf:about="#EntityType5">
   <rdfs:subClassOf rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
   <rdfs:label rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stadium</rdfs:label>
   <rdfs:isDefinedBy rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sports ground with tiers of seats for spectators</rdfs:isDefinedBy>
 </owl:Class>
 
-<Descriptor2 rdf:about="#D1">
+<DescriptorType2 rdf:about="#Descriptor1">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <Attribute1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Rotterdam</Attribute1>
   <Attribute9 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</Attribute9>
   <Attribute2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Straat</Attribute2>
-</Descriptor2>
+</DescriptorType2>
 
-<Descriptor1 rdf:about="#D2">
+<DescriptorType1 rdf:about="#Descriptor2">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <Attribute8 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</Attribute8>
   <Attribute7 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">0.0</Attribute7>
-</Descriptor1>
+</DescriptorType1>
 
-<Descriptor1 rdf:about="#D3">
+<DescriptorType1 rdf:about="#Descriptor3">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <Attribute8 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.0</Attribute8>
   <Attribute7 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.0</Attribute7>
-</Descriptor1>
+</DescriptorType1>
 
-<Descriptor3 rdf:about="#D4">
+<DescriptorType3 rdf:about="#Descriptor4">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <Attribute3 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Justin</Attribute3>
   <Attribute4 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bijlow</Attribute4>
-</Descriptor3>
+</DescriptorType3>
 
-<Descriptor2 rdf:about="#D5">
+<DescriptorType2 rdf:about="#Descriptor5">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <Attribute1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Amsterdam</Attribute1>
   <Attribute9 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.0</Attribute9>
   <Attribute2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">street</Attribute2>
-</Descriptor2>
+</DescriptorType2>
 
-<Descriptor3 rdf:about="#D6">
+<DescriptorType3 rdf:about="#Descriptor6">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <Attribute3 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Erling</Attribute3>
   <Attribute4 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Haaland</Attribute4>
-</Descriptor3>
+</DescriptorType3>
 
-<Descriptor3 rdf:about="#D7">
+<DescriptorType3 rdf:about="#Descriptor7">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <Attribute3 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Steven</Attribute3>
   <Attribute4 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Berghuis</Attribute4>
-</Descriptor3>
+</DescriptorType3>
 
-<Descriptor2 rdf:about="#D8">
+<DescriptorType2 rdf:about="#Descriptor8">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <Attribute1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Liverpool</Attribute1>
   <Attribute9 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2.0</Attribute9>
   <Attribute2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Street</Attribute2>
-</Descriptor2>
+</DescriptorType2>
 
-<Descriptor2 rdf:about="#D9">
+<DescriptorType2 rdf:about="#Descriptor9">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <Attribute1 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Manchester</Attribute1>
   <Attribute9 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">22.0</Attribute9>
   <Attribute2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Baker Street</Attribute2>
-</Descriptor2>
+</DescriptorType2>
 
-<Descriptor1 rdf:about="#D10">
+<DescriptorType1 rdf:about="#Descriptor10">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <Attribute8 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">1.0</Attribute8>
   <Attribute7 rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">3.0</Attribute7>
-</Descriptor1>
+</DescriptorType1>
 
-<Descriptor3 rdf:about="#D11">
+<DescriptorType3 rdf:about="#Descriptor11">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <Attribute3 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Virgil</Attribute3>
   <Attribute4 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Van Dijk</Attribute4>
-</Descriptor3>
+</DescriptorType3>
 
-<Entity2 rdf:about="#E1">
+<EntityType2 rdf:about="#Entity1">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <Association6 rdf:resource="#E2"/>
-  <Association1 rdf:resource="#E3"/>
-  <Association3 rdf:resource="#E3"/>
-  <Association1 rdf:resource="#E5"/>
-  <Association3 rdf:resource="#E5"/>
-  <Association4 rdf:resource="#E6"/>
-  <Association5 rdf:resource="#E7"/>
-  <Association7 rdf:resource="#E5"/>
+  <Association6 rdf:resource="#Entity2"/>
+  <Association1 rdf:resource="#Entity3"/>
+  <Association3 rdf:resource="#Entity3"/>
+  <Association1 rdf:resource="#Entity5"/>
+  <Association3 rdf:resource="#Entity5"/>
+  <Association4 rdf:resource="#Entity6"/>
+  <Association5 rdf:resource="#Entity7"/>
+  <Association7 rdf:resource="#Entity5"/>
   <Attribution5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Feyenoord</Attribution5>
-</Entity2>
+</EntityType2>
 
-<Entity5 rdf:about="#E2">
+<EntityType5 rdf:about="#Entity2">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <Attribution4A rdf:resource="#D1"/>
+  <Attribution4OP rdf:resource="#Descriptor1"/>
   <Attribution5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">De Kuip</Attribution5>
-</Entity5>
+</EntityType5>
 
-<Entity3 rdf:about="#E3">
+<EntityType3 rdf:about="#Entity3">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <Attribution1A rdf:resource="#D2"/>
-  <Association6 rdf:resource="#E2"/>
-</Entity3>
+  <Attribution1OP rdf:resource="#Descriptor2"/>
+  <Association6 rdf:resource="#Entity2"/>
+</EntityType3>
 
-<Entity2 rdf:about="#E4">
+<EntityType2 rdf:about="#Entity4">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <Association3 rdf:resource="#E5"/>
-  <Association4 rdf:resource="#E6"/>
-  <Association5 rdf:resource="#E11"/>
-  <Association6 rdf:resource="#E8"/>
-  <Association8 rdf:resource="#E5"/>
+  <Association3 rdf:resource="#Entity5"/>
+  <Association4 rdf:resource="#Entity6"/>
+  <Association5 rdf:resource="#Entity11"/>
+  <Association6 rdf:resource="#Entity8"/>
+  <Association8 rdf:resource="#Entity5"/>
   <Attribution5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ajax</Attribution5>
-</Entity2>
+</EntityType2>
 
-<Entity3 rdf:about="#E5">
+<EntityType3 rdf:about="#Entity5">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <Attribution1A rdf:resource="#D3"/>
-  <Association6 rdf:resource="#E2"/>
-</Entity3>
+  <Attribution1OP rdf:resource="#Descriptor3"/>
+  <Association6 rdf:resource="#Entity2"/>
+</EntityType3>
 
-<Entity4 rdf:about="#E6">
+<EntityType4 rdf:about="#Entity6">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <Attribution3 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Holland</Attribution3>
   <Attribution5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Eredivisie</Attribution5>
-</Entity4>
+</EntityType4>
 
-<Entity1 rdf:about="#E7">
+<EntityType1 rdf:about="#Entity7">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <Attribution5A rdf:resource="#D4"/>
+  <Attribution5OP rdf:resource="#Descriptor4"/>
   <Attribution5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">.</Attribution5>
   <Attribution2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Keeper</Attribution2>
-</Entity1>
+</EntityType1>
 
-<Entity5 rdf:about="#E8">
+<EntityType5 rdf:about="#Entity8">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <Attribution4A rdf:resource="#D5"/>
+  <Attribution4OP rdf:resource="#Descriptor5"/>
   <Attribution5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Arena</Attribution5>
-</Entity5>
+</EntityType5>
 
-<Entity4 rdf:about="#E9">
+<EntityType4 rdf:about="#Entity9">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
   <Attribution3 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">England</Attribution3>
   <Attribution5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Premier League</Attribution5>
-</Entity4>
+</EntityType4>
 
-<Entity1 rdf:about="#E10">
+<EntityType1 rdf:about="#Entity10">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <Attribution5A rdf:resource="#D6"/>
+  <Attribution5OP rdf:resource="#Descriptor6"/>
   <Attribution5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">.</Attribution5>
   <Attribution2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Striker</Attribution2>
-</Entity1>
+</EntityType1>
 
-<Entity1 rdf:about="#E11">
+<EntityType1 rdf:about="#Entity11">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <Attribution5A rdf:resource="#D7"/>
+  <Attribution5OP rdf:resource="#Descriptor7"/>
   <Attribution5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">.</Attribution5>
   <Attribution2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Forward</Attribution2>
-</Entity1>
+</EntityType1>
 
-<Entity2 rdf:about="#E12">
+<EntityType2 rdf:about="#Entity12">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <Association4 rdf:resource="#E9"/>
-  <Association5 rdf:resource="#E10"/>
-  <Association6 rdf:resource="#E15"/>
-  <Association1 rdf:resource="#E16"/>
-  <Association7 rdf:resource="#E16"/>
+  <Association4 rdf:resource="#Entity9"/>
+  <Association5 rdf:resource="#Entity10"/>
+  <Association6 rdf:resource="#Entity15"/>
+  <Association1 rdf:resource="#Entity16"/>
+  <Association7 rdf:resource="#Entity16"/>
   <Attribution5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Manchester City</Attribution5>
-</Entity2>
+</EntityType2>
 
-<Entity2 rdf:about="#E13">
+<EntityType2 rdf:about="#Entity13">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <Association4 rdf:resource="#E9"/>
-  <Association6 rdf:resource="#E14"/>
-  <Association8 rdf:resource="#E16"/>
-  <Association5 rdf:resource="#E17"/>
+  <Association4 rdf:resource="#Entity9"/>
+  <Association6 rdf:resource="#Entity14"/>
+  <Association8 rdf:resource="#Entity16"/>
+  <Association5 rdf:resource="#Entity17"/>
   <Attribution5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Liverpool</Attribution5>
-</Entity2>
+</EntityType2>
 
-<Entity5 rdf:about="#E14">
+<EntityType5 rdf:about="#Entity14">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <Attribution4A rdf:resource="#D8"/>
+  <Attribution4OP rdf:resource="#Descriptor8"/>
   <Attribution5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Anfield</Attribution5>
-</Entity5>
+</EntityType5>
 
-<Entity5 rdf:about="#E15">
+<EntityType5 rdf:about="#Entity15">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <Attribution4A rdf:resource="#D9"/>
+  <Attribution4OP rdf:resource="#Descriptor9"/>
   <Attribution5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Etihad Stadium</Attribution5>
-</Entity5>
+</EntityType5>
 
-<Entity3 rdf:about="#E16">
+<EntityType3 rdf:about="#Entity16">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <Attribution1A rdf:resource="#D10"/>
-</Entity3>
+  <Attribution1OP rdf:resource="#Descriptor10"/>
+</EntityType3>
 
-<Entity1 rdf:about="#E17">
+<EntityType1 rdf:about="#Entity17">
   <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NamedIndividual"/>
-  <Attribution5A rdf:resource="#D11"/>
+  <Attribution5OP rdf:resource="#Descriptor11"/>
   <Attribution5 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">.</Attribution5>
   <Attribution2 rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Defender</Attribution2>
-</Entity1>
+</EntityType1>
 
 
 </rdf:RDF>
